@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRifyMe</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navLeft">
+            <div class="icon">
+                QRifyMe
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container-heading">
+            QRifyMe: Instant QR Code Magic
+        </div>
+        <form id="qrForm">
+            <input type="text" id="urlInput" placeholder="Enter URL here..." required>
+            <button type="button" onclick="generateQRCode()">Generate QR Code</button>
+        </form>
+        <div class="qrcode">
+            <div id="qrcode" class="QR"></div>
+            <div class="btns">
+                <a id="downloadLink" class="downloadQR" download="qrcode.png" onclick="downloadQRCode()">Download QR
+                    Code</a>
+                <a id="printLink" class="printQR" download="qrcode.png" onclick="printQRCode()">Print QR Code</a>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

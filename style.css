@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Prata", serif;
+}
+
+.navbar {
+  top: 0;
+  display: block;
+  padding: 0.75rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navbar .navLeft .icon {
+  font-size: 1.563rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .container-heading {
+  font-size: 3.125rem;
+  font-weight: 200;
+  padding: 2.188rem 4.375rem;
+}
+
+.container form {
+  width: 60%;
+  height: fit-content;
+  padding: 0.938rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container form input {
+  padding: 0.625rem;
+  width: 75%;
+  border-radius: 8rem;
+}
+
+.container form button {
+  padding: 0.625rem;
+  border-radius: 8rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+}
+
+.container .qrcode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.938rem;
+  height: fit-content;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.container .qrcode .btns {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.875rem;
+}
+
+.container .qrcode .downloadQR,
+.container .qrcode .printQR {
+  user-select: none;
+  cursor: pointer;
+  display: none;
+  background-color: #000000;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.938rem;
+  border-radius: 0.8rem;
+}
