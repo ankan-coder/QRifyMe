@@ -6,6 +6,10 @@
   font-family: "Prata", serif;
 }
 
+html {
+  font-size: 100%;
+}
+
 .navbar {
   top: 0;
   display: block;
@@ -88,4 +92,32 @@
   font-size: 1.25rem;
   padding: 0.938rem;
   border-radius: 0.8rem;
+}
+
+@media (min-width: 1px) and (max-width: 500px) {
+  html {
+    font-size: 50%; /* 62.5% of the default font size */
+  }
+
+  .container form input {
+    width: 144%;
+  }
+
+  .container .container-heading {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  html {
+    font-size: 55%; /* 62.5% of the default font size */
+  }
+
+  .container form input {
+    width: 144%;
+  }
+
+  .container .container-heading {
+    font-size: 4.4rem;
+  }
 }
